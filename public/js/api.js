@@ -3,7 +3,7 @@ import { getAuthToken, handleUnauthorized } from "./auth.js";
 
 export async function fetchCourses(params) {
   const query = new URLSearchParams();
-  if (params.search) query.set("q", params.search);
+  if (params.search) query.set("search", params.search); //"q" -> "search"
   if (params.category && params.category !== "all") query.set("category", params.category);
   if (params.level && params.level !== "all") query.set("level", params.level);
   if (params.status && params.status !== "all") query.set("status", params.status);

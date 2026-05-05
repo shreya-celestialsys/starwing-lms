@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("node:path");
 const authRouter = require("./routes/auth");
 const coursesRouter = require("./routes/courses");
-const { initCourseStore } = require("./services/courseService");
+const { initCourseStore } = require("./services/courseService.js");
 const { initUserStore } = require("./services/userService");
 const { HttpError } = require("./utils/httpError");
 

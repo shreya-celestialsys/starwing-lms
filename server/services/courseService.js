@@ -9,6 +9,7 @@ let courses = [];
 
 async function initCourseStore() {
   const loaded = await readCourses();
+  // console.log("data loaded from json", loaded.length)
   courses = Array.isArray(loaded) ? loaded : [];
 }
 
@@ -18,8 +19,11 @@ function listCourses(query = {}) {
   const level = (query.level || "all").toLowerCase();
   const status = (query.status || "all").toLowerCase();
 
+  // console.log(search, category, level, status);
+
   const pageSize = clampNumber(parseInt(query.pageSize, 10) || 6, 1, 24);
   const requestedPage = Math.max(parseInt(query.page, 10) || 1, 1);
+  // console.log(courses)
 
   const filtered = courses.filter((course) => {
     const tags = Array.isArray(course.tags) ? course.tags : [];
@@ -31,16 +35,24 @@ function listCourses(query = {}) {
 
     const matchesCategory = category === "all" || course.category.toLowerCase() === category;
     const matchesLevel = level === "all" || course.level.toLowerCase() === level;
-    const matchesStatus = status === "all" || course.status.toLowerCase === status;
+    const matchesStatus = status === "all" || course.status.toLowerCase() === status; //typo
 
     return matchesSearch && matchesCategory && matchesLevel && matchesStatus;
   });
 
   const totalItems = filtered.length;
-  const totalPages = totalItems === 0 ? 0 : Math.floor(totalItems / pageSize);
+  // console.log("filter item " , totalItems)
+  const totalPages = totalItems === 0 ? 0 : Math.ceil(totalItems / pageSize); //Math.floor to ceil
   const currentPage = totalPages === 0 ? 1 : Math.min(requestedPage, totalPages);
   const start = (currentPage - 1) * pageSize;
   const pageItems = filtered.slice(start, start + pageSize);
+
+//   console.log({
+//   totalItems,
+//   pageSize,
+//   totalPages,
+//   requestedPage,
+// });
 
   return {
     data: pageItems,

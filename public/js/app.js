@@ -55,7 +55,7 @@ async function loadCourses() {
 
 function bindEvents() {
   const debouncedSearch = debounce((value) => {
-    setFilters({ search: value.trim() });
+    setFilters({ search: value }); //remove trim() - it gave backspace effect
     loadCourses();
   }, 220);
 
@@ -64,7 +64,7 @@ function bindEvents() {
   });
 
   listen(elements.categoryFilter, "change", (event) => {
-    setFilters({ level: event.target.value });
+    setFilters({ category: event.target.value });
     loadCourses();
   });
 
