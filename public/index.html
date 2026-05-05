@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarWing LMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="toast-stack" id="toastStack" aria-live="assertive" aria-atomic="true"></div>
+    <header class="app-bar">
+      <div class="app-bar__welcome">
+        <h1>StarWing LMS</h1>
+        <p>Mission control for modern learning squads.</p>
+      </div>
+      <div class="app-bar__auth">
+        <span class="auth-greeting" id="userGreeting" hidden></span>
+        <button id="openAuthDialog" class="ghost" type="button">Sign In</button>
+        <button id="logoutButton" class="ghost danger" type="button" hidden>Log Out</button>
+      </div>
+    </header>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">✶</span>
+          <h1>StarWing LMS</h1>
+          <p>Curate your learning flight plan.</p>
+        </div>
+        <section class="sidebar-section">
+          <h2>Filters</h2>
+          <label class="control">
+            <span>Search</span>
+            <input type="search" id="searchInput" placeholder="Find courses" autocomplete="off" />
+          </label>
+          <label class="control">
+            <span>Category</span>
+            <select id="categoryFilter">
+              <option value="all">All</option>
+            </select>
+          </label>
+          <label class="control">
+            <span>Level</span>
+            <select id="levelFilter">
+              <option value="all">All</option>
+            </select>
+          </label>
+          <label class="control">
+            <span>Status</span>
+            <select id="statusFilter">
+              <option value="all">All</option>
+            </select>
+          </label>
+        </section>
+        <section class="sidebar-section">
+          <h2>Quick Stats</h2>
+          <ul class="stats">
+            <li id="statTotal">0 courses</li>
+            <li id="statInProgress">0 in progress</li>
+            <li id="statCompleted">0 completed</li>
+          </ul>
+        </section>
+      </aside>
+      <main class="workspace">
+        <header class="workspace-header">
+          <div>
+            <h2>Course Catalog</h2>
+            <p id="resultSummary">Loading courses…</p>
+          </div>
+          <button id="openNewCourse" class="primary">Add Course</button>
+        </header>
+        <section class="course-grid" id="courseGrid"></section>
+        <footer class="pagination" id="pagination"></footer>
+      </main>
+    </div>
+
+    <dialog id="authDialog">
+      <form id="authForm" novalidate>
+        <header>
+          <h3 id="authFormTitle">Sign In</h3>
+          <p class="dialog-subtitle" id="authFormSubtitle">Access your course controls.</p>
+        </header>
+        <div class="form-grid auth-form-grid">
+          <label class="control auth-name-field" id="authNameField">
+            <span>Name</span>
+            <input type="text" id="authName" name="name" autocomplete="name" />
+          </label>
+          <label class="control span-2">
+            <span>Email</span>
+            <input type="email" id="authEmail" name="email" autocomplete="email" required />
+          </label>
+          <label class="control span-2">
+            <span>Password</span>
+            <input type="password" id="authPassword" name="password" autocomplete="current-password" required />
+          </label>
+        </div>
+        <p class="auth-error" id="authError" role="alert"></p>
+        <footer class="dialog-footer auth-footer">
+          <button type="button" id="authCancel">Cancel</button>
+          <button type="submit" class="primary" id="authSubmit">Continue</button>
+        </footer>
+        <p class="auth-switch" id="authSwitch">
+          <span id="authSwitchMessage">No account yet?</span>
+          <button type="button" id="toggleAuthMode" class="link-button">Create one</button>
+        </p>
+      </form>
+    </dialog>
+
+    <dialog id="courseDialog">
+      <form id="courseForm" novalidate>
+        <header>
+          <h3 id="formTitle">Create Course</h3>
+        </header>
+        <div class="form-grid">
+          <label class="control">
+            <span>Title</span>
+            <input type="text" id="courseTitle" name="title" required />
+          </label>
+          <label class="control">
+            <span>Instructor</span>
+            <input type="text" id="courseInstructor" name="instructor" required />
+          </label>
+          <label class="control">
+            <span>Category</span>
+            <input type="text" id="courseCategory" name="category" required />
+          </label>
+          <label class="control">
+            <span>Level</span>
+            <select id="courseLevel" name="level" required>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </label>
+          <label class="control">
+            <span>Status</span>
+            <select id="courseStatus" name="status" required>
+              <option value="planned">Planned</option>
+              <option value="in-progress">In Progress</option>
+              <option value="completed">Completed</option>
+            </select>
+          </label>
+          <label class="control">
+            <span>Duration (hrs)</span>
+            <input type="number" id="courseDuration" name="duration" min="1" required />
+          </label>
+          <label class="control span-2">
+            <span>Description</span>
+            <textarea id="courseDescription" name="description" rows="4" required></textarea>
+          </label>
+          <label class="control span-2">
+            <span>Tags (comma separated)</span>
+            <input type="text" id="courseTags" name="tags" placeholder="design, ux" />
+          </label>
+        </div>
+        <footer class="dialog-footer">
+          <button type="button" id="cancelDialog">Cancel</button>
+          <button type="submit" class="primary" id="submitCourse">Save</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <dialog id="courseDetailDialog">
+      <article class="course-detail">
+        <header class="course-detail__header">
+          <div>
+            <h3 id="detailTitle">Course Title</h3>
+            <p id="detailSubtitle">Instructor · Category</p>
+          </div>
+          <button type="button" id="detailClose" class="icon-btn" aria-label="Close details">×</button>
+        </header>
+        <section class="course-detail__chips">
+          <span class="chip" id="detailLevel">Level</span>
+          <span class="chip" id="detailStatus">Status</span>
+          <span class="chip" id="detailDuration">Duration</span>
+        </section>
+        <section class="course-detail__body">
+          <h4>Overview</h4>
+          <p id="detailDescription"></p>
+          <dl class="course-detail__list">
+            <div>
+              <dt>Instructor</dt>
+              <dd id="detailInstructor"></dd>
+            </div>
+            <div>
+              <dt>Category</dt>
+              <dd id="detailCategory"></dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd id="detailStatusText"></dd>
+            </div>
+            <div>
+              <dt>Duration</dt>
+              <dd id="detailDurationText"></dd>
+            </div>
+          </dl>
+          <div class="course-detail__tags" id="detailTags"></div>
+        </section>
+        <footer class="course-detail__footer">
+          <button type="button" class="ghost" id="detailEdit" hidden>Edit Course</button>
+          <button type="button" class="ghost danger" id="detailDelete" hidden>Delete Course</button>
+        </footer>
+      </article>
+    </dialog>
+
+    <template id="courseCardTemplate">
+      <article class="course-card">
+        <header>
+          <div class="course-meta">
+            <span class="chip chip-level"></span>
+            <span class="chip chip-status"></span>
+          </div>
+          <button class="icon-btn" data-action="edit" title="Edit" type="button">✎</button>
+        </header>
+        <h3 class="course-title"></h3>
+        <p class="course-description"></p>
+        <dl class="course-details">
+          <div>
+            <dt>Instructor</dt>
+            <dd class="course-instructor"></dd>
+          </div>
+          <div>
+            <dt>Category</dt>
+            <dd class="course-category"></dd>
+          </div>
+          <div>
+            <dt>Duration</dt>
+            <dd class="course-duration"></dd>
+          </div>
+        </dl>
+        <div class="course-tags"></div>
+        <footer class="card-footer">
+          <button class="ghost danger" data-action="delete" type="button">Delete</button>
+        </footer>
+      </article>
+    </template>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

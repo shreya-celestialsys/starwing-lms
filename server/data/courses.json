@@ -1,0 +1,338 @@
+[
+  {
+    "id": "4aa04365-d64f-4c12-8e50-5e4a0f2a5d9f",
+    "title": "AI for Creative Coding",
+    "instructor": "Ravi Petrov",
+    "category": "Engineering",
+    "level": "advanced",
+    "status": "planned",
+    "duration": 24,
+    "description": "Blend generative models with artistic coding practices using TensorFlow.js and WebGPU.",
+    "tags": [
+      "ai",
+      "tensorflow.js",
+      "webgpu"
+    ],
+    "createdAt": "2025-02-12T12:00:00.000Z",
+    "updatedAt": "2026-05-05T10:15:24.842Z"
+  },
+  {
+    "id": "af812362-9403-43a2-92c0-1ec35c373c7a",
+    "title": "Strategic Storytelling",
+    "instructor": "Samira Holt",
+    "category": "Leadership",
+    "level": "beginner",
+    "status": "planned",
+    "duration": 8,
+    "description": "Craft compelling narratives that align teams and stakeholders around product vision.",
+    "tags": [
+      "communication",
+      "product",
+      "writing"
+    ],
+    "createdAt": "2025-01-22T16:15:00.000Z",
+    "updatedAt": "2026-05-05T10:54:44.872Z"
+  },
+  {
+    "id": "134d7f0b-3f9f-4bc9-b104-a4d223c62cf0",
+    "title": "Customer Discovery Fieldwork",
+    "instructor": "Levi Chen",
+    "category": "Research",
+    "level": "intermediate",
+    "status": "planned",
+    "duration": 12,
+    "description": "Run research sprints, interview users effectively, and synthesize insights into opportunity maps.",
+    "tags": [
+      "ux",
+      "research",
+      "interviews"
+    ],
+    "createdAt": "2025-03-02T10:45:00.000Z",
+    "updatedAt": "2026-05-05T10:53:51.676Z"
+  },
+  {
+    "id": "a2c5a19c-9dba-4e33-b2e2-b902105892b2",
+    "title": "Data Sketches with D3",
+    "instructor": "Anya Voronin",
+    "category": "Engineering",
+    "level": "intermediate",
+    "status": "completed",
+    "duration": 14,
+    "description": "Translate raw datasets into expressive visuals using D3.js and modern layout techniques.",
+    "tags": [
+      "d3",
+      "visualization",
+      "javascript"
+    ],
+    "createdAt": "2025-04-11T14:05:00.000Z"
+  },
+  {
+    "id": "542c204b-60da-4b3c-b0c7-541761841f71",
+    "title": "Inclusive Content Design",
+    "instructor": "Kaiya Ortiz",
+    "category": "Content Strategy",
+    "level": "beginner",
+    "status": "completed",
+    "duration": 6,
+    "description": "Design product copy and learning materials that resonate with diverse audiences.",
+    "tags": [
+      "ux writing",
+      "accessibility",
+      "content"
+    ],
+    "createdAt": "2025-02-25T08:20:00.000Z",
+    "updatedAt": "2026-05-05T10:51:56.076Z"
+  },
+  {
+    "id": "cf82d835-0a1d-4c1f-8a79-fa845d7667a1",
+    "title": "Async Collaboration Playbook",
+    "instructor": "Gavin Prieto",
+    "category": "Leadership",
+    "level": "intermediate",
+    "status": "in-progress",
+    "duration": 10,
+    "description": "Scale global teams with async-first rituals, tooling, and decision-making frameworks.",
+    "tags": [
+      "remote",
+      "ops",
+      "process"
+    ],
+    "createdAt": "2025-03-18T11:10:00.000Z"
+  },
+  {
+    "id": "ddaa0f67-7767-41da-a85f-00cc9b1f3e59",
+    "title": "Ethical Machine Learning",
+    "instructor": "Nina Álvarez",
+    "category": "Engineering",
+    "level": "advanced",
+    "status": "planned",
+    "duration": 16,
+    "description": "Evaluate data bias, design responsible ML pipelines, and communicate ethical trade-offs.",
+    "tags": [
+      "ethics",
+      "machine learning"
+    ],
+    "createdAt": "2025-04-01T15:40:00.000Z"
+  },
+  {
+    "id": "00a89474-45ba-4f15-af61-9877fb3d03dd",
+    "title": "Service Blueprinting Lab",
+    "instructor": "Haruto Koga",
+    "category": "Research",
+    "level": "intermediate",
+    "status": "completed",
+    "duration": 9,
+    "description": "Map end-to-end experiences and align teams through rich service blueprints.",
+    "tags": [
+      "service design",
+      "mapping"
+    ],
+    "createdAt": "2025-01-29T13:25:00.000Z"
+  },
+  {
+    "id": "c6a8414a-188c-4f10-9f16-bf3ffdd24789",
+    "title": "Marketing Analytics Fundamentals",
+    "instructor": "Elena Rossi",
+    "category": "Marketing",
+    "level": "beginner",
+    "status": "in-progress",
+    "duration": 11,
+    "description": "Set up attribution, design dashboards, and interpret signals that drive growth decisions.",
+    "tags": [
+      "analytics",
+      "data studio"
+    ],
+    "createdAt": "2025-02-06T17:55:00.000Z"
+  },
+  {
+    "id": "da1d7d86-9848-4d84-bae1-1a8a1de74619",
+    "title": "Product Operations Sprint",
+    "instructor": "Noah Frazier",
+    "category": "Operations",
+    "level": "intermediate",
+    "status": "planned",
+    "duration": 7,
+    "description": "Codify rituals, automate release notes, and craft alignment cadences for scaling teams.",
+    "tags": [
+      "ops",
+      "automation"
+    ],
+    "createdAt": "2025-03-12T09:05:00.000Z"
+  },
+  {
+    "id": "ecf53ea9-5e28-4b4e-8f58-90fa30604637",
+    "title": "Climate Tech Primer",
+    "instructor": "Mai Tran",
+    "category": "Sustainability",
+    "level": "beginner",
+    "status": "completed",
+    "duration": 5,
+    "description": "Understand climate tech sectors, regulations, and business models shaping the transition.",
+    "tags": [
+      "climate",
+      "policy",
+      "foundations"
+    ],
+    "createdAt": "2025-01-10T07:45:00.000Z"
+  },
+  {
+    "id": "1fb67c98-5f35-4d99-b7ec-9c0c9b1dc5c3",
+    "title": "Product Analytics Deep Dive",
+    "instructor": "Ansel Porter",
+    "category": "Analytics",
+    "level": "intermediate",
+    "status": "in-progress",
+    "duration": 15,
+    "description": "Design lifecycle experiments, interpret funnels, and operationalize product north stars.",
+    "tags": [
+      "experimentation",
+      "metrics",
+      "dashboards"
+    ],
+    "createdAt": "2025-04-15T09:00:00.000Z"
+  },
+  {
+    "id": "c849fdb3-9704-4563-bde9-3a4c4aa0f5f2",
+    "title": "Intro to Rust for Web Devs",
+    "instructor": "Nova Singh",
+    "category": "Engineering",
+    "level": "beginner",
+    "status": "planned",
+    "duration": 10,
+    "description": "Learn Rust fundamentals and build blazing-fast services targeting WebAssembly.",
+    "tags": [
+      "rust",
+      "wasm",
+      "backend"
+    ],
+    "createdAt": "2025-04-20T14:30:00.000Z"
+  },
+  {
+    "id": "9639a721-7e87-4ce5-9064-1ddf5b8dc2be",
+    "title": "Design for Cognitive Load",
+    "instructor": "Harper Ito",
+    "category": "UX",
+    "level": "advanced",
+    "status": "planned",
+    "duration": 12,
+    "description": "Apply cognitive psychology to craft interfaces that reduce friction and improve recall.",
+    "tags": [
+      "ux",
+      "psychology",
+      "research"
+    ],
+    "createdAt": "2025-05-02T11:45:00.000Z"
+  },
+  {
+    "id": "f49bbf3c-5de8-44a4-b17f-7f0f3ed6f630",
+    "title": "Serverless Ops Toolkit",
+    "instructor": "Elias Kahn",
+    "category": "Operations",
+    "level": "intermediate",
+    "status": "in-progress",
+    "duration": 9,
+    "description": "Monitor, debug, and cost-optimize large-scale serverless workloads across clouds.",
+    "tags": [
+      "serverless",
+      "observability",
+      "aws"
+    ],
+    "createdAt": "2025-03-27T10:10:00.000Z"
+  },
+  {
+    "id": "8fd7fb05-2c55-4760-9d12-4e96337a9e9b",
+    "title": "Narrative Dashboards",
+    "instructor": "Daphne Nkomo",
+    "category": "Data Visualization",
+    "level": "advanced",
+    "status": "completed",
+    "duration": 13,
+    "description": "Blend storytelling with analytics to craft dashboards that drive stakeholder action.",
+    "tags": [
+      "dataviz",
+      "storytelling",
+      "stakeholders"
+    ],
+    "createdAt": "2025-02-18T16:20:00.000Z"
+  },
+  {
+    "id": "71931e54-0d05-4d7c-9fe4-9f4bb8b0f36c",
+    "title": "Edge AI Deployment",
+    "instructor": "Riley Chen",
+    "category": "Engineering",
+    "level": "advanced",
+    "status": "planned",
+    "duration": 18,
+    "description": "Ship efficient ML models to constrained hardware with quantization and distillation.",
+    "tags": [
+      "edge",
+      "ml",
+      "deployment"
+    ],
+    "createdAt": "2025-04-09T13:05:00.000Z"
+  },
+  {
+    "id": "e9a3d034-b47f-466d-9d8d-90b0f2d0937d",
+    "title": "Revenue Modeling Bootcamp",
+    "instructor": "Camila Rivera",
+    "category": "Finance",
+    "level": "intermediate",
+    "status": "planned",
+    "duration": 16,
+    "description": "Model subscription revenue scenarios, cohort churn, and expansion strategies.",
+    "tags": [
+      "finance",
+      "modeling",
+      "subscription"
+    ],
+    "createdAt": "2025-05-08T08:55:00.000Z"
+  },
+  {
+    "id": "a03cccf2-2cac-41bf-96ca-870683ccb5ec",
+    "title": "Inclusive Research Ops",
+    "instructor": "Zara Olu",
+    "category": "Research",
+    "level": "beginner",
+    "status": "completed",
+    "duration": 7,
+    "description": "Stand up research rituals that include diverse voices and maintain ethical guardrails.",
+    "tags": [
+      "research",
+      "ops",
+      "inclusion"
+    ],
+    "createdAt": "2025-01-30T09:40:00.000Z"
+  },
+  {
+    "id": "60b0cfd0-e8fe-4d7e-9f69-2f4afecb8d81",
+    "title": "Teams that Ship",
+    "instructor": "Leo Martínez",
+    "category": "Leadership",
+    "level": "intermediate",
+    "status": "in-progress",
+    "duration": 11,
+    "description": "Design rituals, roadmapping cadences, and feedback loops that keep teams shipping.",
+    "tags": [
+      "leadership",
+      "process",
+      "execution"
+    ],
+    "createdAt": "2025-03-05T12:15:00.000Z"
+  },
+  {
+    "id": "7fb24774-0db7-41d2-942a-968e1596a74b",
+    "title": "Design Tokens at Scale",
+    "instructor": "Quinn Patel",
+    "category": "Design Systems",
+    "level": "advanced",
+    "status": "planned",
+    "duration": 14,
+    "description": "Build platform-agnostic token pipelines, linting, and governance models.",
+    "tags": [
+      "design systems",
+      "tokens",
+      "tooling"
+    ],
+    "createdAt": "2025-04-28T17:25:00.000Z"
+  }
+]
