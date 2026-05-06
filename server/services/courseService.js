@@ -98,7 +98,9 @@ async function deleteCourse(id) {
   if (index === -1) {
     throw new HttpError(404, "Course not found");
   }
+  // console.log(index);
   courses.splice(index, 1);
+  await persist();  //persist() is missing
 }
 
 function getFilterOptions() {

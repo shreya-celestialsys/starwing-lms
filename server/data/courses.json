@@ -1,36 +1,5 @@
 [
   {
-    "title": "node",
-    "instructor": "awjbf",
-    "category": "ansvf",
-    "level": "advanced",
-    "status": "in-progress",
-    "duration": 24,
-    "description": "dfasf",
-    "tags": [
-      "qwer"
-    ],
-    "id": "fcc338b0-f4f4-4238-a4c2-c172605ec26d",
-    "createdAt": "2026-05-06T11:15:26.573Z"
-  },
-  {
-    "id": "af812362-9403-43a2-92c0-1ec35c373c7a",
-    "title": "Strategic Storytelling",
-    "instructor": "Samira Holt",
-    "category": "Leadership",
-    "level": "beginner",
-    "status": "planned",
-    "duration": 8,
-    "description": "Craft compelling narratives that align teams and stakeholders around product vision.",
-    "tags": [
-      "communication",
-      "product",
-      "writing"
-    ],
-    "createdAt": "2025-01-22T16:15:00.000Z",
-    "updatedAt": "2026-05-05T10:54:44.872Z"
-  },
-  {
     "id": "134d7f0b-3f9f-4bc9-b104-a4d223c62cf0",
     "title": "Customer Discovery Fieldwork",
     "instructor": "Levi Chen",
