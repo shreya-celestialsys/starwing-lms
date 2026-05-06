@@ -74,7 +74,7 @@ async function createCourse(payload) {
   console.log(payload)
   course.id = randomUUID();
   course.createdAt = new Date().toISOString(); //missing ()
-  console.log(course);
+  // console.log(course);
   courses.unshift(course);
   await persist();
   return course;
