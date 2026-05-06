@@ -123,7 +123,7 @@ function bindEvents() {
   });
 
   listen(elements.courseGrid, "click", async (event) => {
-    event.preventDefault();
+    // event.preventDefault();   //if we set any event passive browser ignores the preventDefaut(), but throw error in your console
     const card = event.target.closest(".course-card");
     if (!card) return;
     const courseId = card.dataset.id;
@@ -183,6 +183,7 @@ function bindEvents() {
   });
 
   listen(elements.detailEdit, "click", () => {
+    
     const course = getCurrentDetailCourse();
     if (!course) return;
     if (!isAuthenticated()) {

@@ -1,22 +1,5 @@
 [
   {
-    "id": "134d7f0b-3f9f-4bc9-b104-a4d223c62cf0",
-    "title": "Customer Discovery Fieldwork",
-    "instructor": "Levi Chen",
-    "category": "Research",
-    "level": "intermediate",
-    "status": "planned",
-    "duration": 12,
-    "description": "Run research sprints, interview users effectively, and synthesize insights into opportunity maps.",
-    "tags": [
-      "ux",
-      "research",
-      "interviews"
-    ],
-    "createdAt": "2025-03-02T10:45:00.000Z",
-    "updatedAt": "2026-05-05T10:53:51.676Z"
-  },
-  {
     "id": "a2c5a19c-9dba-4e33-b2e2-b902105892b2",
     "title": "Data Sketches with D3",
     "instructor": "Anya Voronin",
