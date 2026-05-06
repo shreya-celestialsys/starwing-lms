@@ -1,20 +1,17 @@
 [
   {
-    "id": "4aa04365-d64f-4c12-8e50-5e4a0f2a5d9f",
-    "title": "AI for Creative Coding",
-    "instructor": "Ravi Petrov",
-    "category": "Engineering",
+    "title": "node",
+    "instructor": "awjbf",
+    "category": "ansvf",
     "level": "advanced",
-    "status": "planned",
+    "status": "in-progress",
     "duration": 24,
-    "description": "Blend generative models with artistic coding practices using TensorFlow.js and WebGPU.",
+    "description": "dfasf",
     "tags": [
-      "ai",
-      "tensorflow.js",
-      "webgpu"
+      "qwer"
     ],
-    "createdAt": "2025-02-12T12:00:00.000Z",
-    "updatedAt": "2026-05-05T10:15:24.842Z"
+    "id": "fcc338b0-f4f4-4238-a4c2-c172605ec26d",
+    "createdAt": "2026-05-06T11:15:26.573Z"
   },
   {
     "id": "af812362-9403-43a2-92c0-1ec35c373c7a",
