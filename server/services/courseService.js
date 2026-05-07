@@ -31,7 +31,7 @@ function listCourses(query = {}) {
 
     const matchesCategory = category === "all" || course.category.toLowerCase() === category;
     const matchesLevel = level === "all" || course.level.toLowerCase() === level;
-    const matchesStatus = status === "all" || course.status.toLowerCase === status;
+    const matchesStatus = status === "all" || course.status.toLowerCase() === status;
 
     return matchesSearch && matchesCategory && matchesLevel && matchesStatus;
   });
