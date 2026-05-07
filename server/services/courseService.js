@@ -85,6 +85,7 @@ async function deleteCourse(id) {
     throw new HttpError(404, "Course not found");
   }
   courses.splice(index, 1);
+  await persist();
 }
 
 function getFilterOptions() {
