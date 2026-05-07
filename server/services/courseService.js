@@ -60,7 +60,7 @@ function listCourses(query = {}) {
 async function createCourse(payload) {
   const course = sanitizeCoursePayload(payload, { partial: false });
   course.id = randomUUID();
-  course.createdAt = new Date().toISOString;
+  course.createdAt = new Date().toISOString();
   courses.unshift(course);
   await persist();
   return course;
