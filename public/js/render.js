@@ -98,7 +98,7 @@ export function renderPagination(pagination) {
     elements.pagination.appendChild(button);
   }
 
-  elements.pagination.appendChild(createPageButton("Next", page, page === totalPages));
+  elements.pagination.appendChild(createPageButton("Next", page + 1, page === totalPages));
 }
 
 function populateSelect(select, values, selectedValue) {
