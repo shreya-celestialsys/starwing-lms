@@ -123,7 +123,7 @@ function bindEvents() {
   });
 
   listen(elements.courseGrid, "click", async (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     const card = event.target.closest(".course-card");
     if (!card) return;
     const courseId = card.dataset.id;
