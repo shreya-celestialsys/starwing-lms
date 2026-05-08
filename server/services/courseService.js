@@ -37,7 +37,7 @@ function listCourses(query = {}) {
   });
 
   const totalItems = filtered.length;
-  const totalPages = totalItems === 0 ? 0 : Math.floor(totalItems / pageSize);
+  const totalPages = totalItems === 0 ? 0 : Math.ceil(totalItems / pageSize);
   const currentPage = totalPages === 0 ? 1 : Math.min(requestedPage, totalPages);
   const start = (currentPage - 1) * pageSize;
   const pageItems = filtered.slice(start, start + pageSize);
