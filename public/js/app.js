@@ -64,7 +64,7 @@ function bindEvents() {
   });
 
   listen(elements.categoryFilter, "change", (event) => {
-    setFilters({ level: event.target.value });
+    setFilters({ category: event.target.value });
     loadCourses();
   });
 
