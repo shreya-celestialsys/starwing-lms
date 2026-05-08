@@ -1,5 +1,59 @@
 [
   {
+    "title": "M,WFENB/WQ",
+    "instructor": "A,MSNBDF/BSA",
+    "category": "A.SM,D",
+    "level": "intermediate",
+    "status": "planned",
+    "duration": 23,
+    "description": "AS/,M",
+    "tags": [
+      "backend"
+    ],
+    "id": "c96c6a69-94c2-4a32-90d8-a6e3151b4dd7"
+  },
+  {
+    "title": "askdnb/",
+    "instructor": "MSBC/b",
+    "category": ",s.amdb/k",
+    "level": "intermediate",
+    "status": "completed",
+    "duration": 324,
+    "description": "SDFV/M",
+    "tags": [
+      "react",
+      "UI"
+    ],
+    "id": "6215a32e-f8a9-4952-83fa-e0ce29c748c3"
+  },
+  {
+    "title": "bd;fas/",
+    "instructor": "a,msbk/b",
+    "category": ",msnbd/ks",
+    "level": "beginner",
+    "status": "planned",
+    "duration": 23,
+    "description": ",mcbn",
+    "tags": [
+      "backend"
+    ],
+    "id": "1df60175-02fc-4819-890f-7402708e5ea8"
+  },
+  {
+    "title": "aksdb",
+    "instructor": "aksd",
+    "category": "aKLSDH",
+    "level": "intermediate",
+    "status": "planned",
+    "duration": 123,
+    "description": "QFQWF",
+    "tags": [
+      "react",
+      "UI"
+    ],
+    "id": "f7c86e3c-86cc-4698-9cba-757b248f3c1b"
+  },
+  {
     "id": "4aa04365-d64f-4c12-8e50-5e4a0f2a5d9f",
     "title": "AI for Creative Coding",
     "instructor": "Ravi Petrov",
