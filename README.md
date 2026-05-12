@@ -5,7 +5,7 @@ The task is to identify and fix the following bugs introduced in the project:
 * [ ] Status filtering doesn’t work in the catalog API
 * [ ] Pagination skips the final page of courses
 * [ ] Newly created courses lack a valid `createdAt` timestamp
-*  ✅ Deleting a course doesn’t persist after a server restart
+* [x] Deleting a course doesn’t persist after a server restart
 * [ ] Pagination bounds behave erratically with small or large page sizes
 * [ ] Clicking catalog actions throws `preventDefault` errors
 * [ ] Changing the category filter updates the wrong field
