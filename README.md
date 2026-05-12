@@ -2,7 +2,7 @@
 
 ## Task
 The task is to identify and fix the following bugs introduced in the project:
-*  ✅ Status filtering doesn’t work in the catalog API
+* [x] Status filtering doesn’t work in the catalog API
 * [ ] Pagination skips the final page of courses
 * [ ] Newly created courses lack a valid `createdAt` timestamp
 * [ ] Deleting a course doesn’t persist after a server restart
