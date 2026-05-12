@@ -8,7 +8,7 @@ The task is to identify and fix the following bugs introduced in the project:
 * [ ] Deleting a course doesn’t persist after a server restart
 * [ ] Pagination bounds behave erratically with small or large page sizes
 * [ ] Clicking catalog actions throws `preventDefault` errors
-*  ✅ Changing the category filter updates the wrong field
+* [x] Changing the category filter updates the wrong field
 * [ ] Text search returns unfiltered results
 * [ ] “Next” pagination button does not advance
 * [ ] Course detail modal hides edit/delete options after signing in
