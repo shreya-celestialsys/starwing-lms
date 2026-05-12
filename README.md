@@ -11,7 +11,7 @@ The task is to identify and fix the following bugs introduced in the project:
 * [ ] Changing the category filter updates the wrong field
 * [ ] Text search returns unfiltered results
 * [ ] “Next” pagination button does not advance
-*  ✅ Course detail modal hides edit/delete options after signing in
+* [x] Course detail modal hides edit/delete options after signing in
 
 ## Notes
 These issues impact core functionality including API reliability, UI behavior, and data persistence.
