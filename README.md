@@ -7,7 +7,7 @@ The task is to identify and fix the following bugs introduced in the project:
 * [ ] Newly created courses lack a valid `createdAt` timestamp
 * [ ] Deleting a course doesn’t persist after a server restart
 * [ ] Pagination bounds behave erratically with small or large page sizes
-*  ✅ Clicking catalog actions throws `preventDefault` errors
+* [x] Clicking catalog actions throws `preventDefault` errors
 * [ ] Changing the category filter updates the wrong field
 * [ ] Text search returns unfiltered results
 * [ ] “Next” pagination button does not advance
