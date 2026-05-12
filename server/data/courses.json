@@ -1,22 +1,5 @@
 [
   {
-    "id": "4aa04365-d64f-4c12-8e50-5e4a0f2a5d9f",
-    "title": "AI for Creative Coding",
-    "instructor": "Ravi Petrov",
-    "category": "Engineering",
-    "level": "advanced",
-    "status": "planned",
-    "duration": 24,
-    "description": "Blend generative models with artistic coding practices using TensorFlow.js and WebGPU.",
-    "tags": [
-      "ai",
-      "tensorflow.js",
-      "webgpu"
-    ],
-    "createdAt": "2025-02-12T12:00:00.000Z",
-    "updatedAt": "2026-05-05T10:15:24.842Z"
-  },
-  {
     "id": "af812362-9403-43a2-92c0-1ec35c373c7a",
     "title": "Strategic Storytelling",
     "instructor": "Samira Holt",
