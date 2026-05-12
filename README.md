@@ -10,7 +10,7 @@ The task is to identify and fix the following bugs introduced in the project:
 * [ ] Clicking catalog actions throws `preventDefault` errors
 * [ ] Changing the category filter updates the wrong field
 * [ ] Text search returns unfiltered results
-*  ✅ “Next” pagination button does not advance
+* [x] “Next” pagination button does not advance
 * [ ] Course detail modal hides edit/delete options after signing in
 
 ## Notes
