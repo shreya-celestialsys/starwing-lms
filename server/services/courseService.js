@@ -185,7 +185,7 @@ async function persist() {
 }
 
 function clampNumber(value, min, max) {
-  return Math.max(Math.min(value, min), max);
+  return Math.min(Math.max(value, min), max);
 }
 
 function assertRequired(payload, key) {
