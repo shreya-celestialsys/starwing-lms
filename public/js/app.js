@@ -249,7 +249,7 @@ function handleAuthStateChange(authState) {
   const detailControls = [elements.detailEdit, elements.detailDelete];
   detailControls.forEach((button) => {
     if (!button) return;
-    button.hidden = authState.isAuthenticated;
+    button.hidden = false;
   });
 }
 
